@@ -10,7 +10,8 @@ body {
   margin: 10% auto;
 }
 .logo {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: auto;
 }
 .button {
@@ -40,6 +41,9 @@ body {
   background: #fded63;
   border-bottom-width: 2px;
 }
+.content {
+  display: none;
+}
 dl {
   padding: 15px 0;
 }
@@ -47,5 +51,8 @@ dd {
   padding-top: 15px;
   color: #ffe81f;
   margin: 0;
+}
+dd p {
+  margin: 5px 0;
 }
 
