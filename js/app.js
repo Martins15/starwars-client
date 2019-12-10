@@ -32,7 +32,11 @@ function renderData(dd, data) {
       for (let j in data) {
         output += "<p>Planet: " + data[j].name + " - Pilots: (" + data[j].count + ") ";
         for (let k in data[j].pilots) {
-          output += data[j].pilots[k][0] + " - " + data[j].pilots[k][1];
+          output += data[j].pilots[k][0];
+          // Some people don't have species.
+          if (data[j].pilots[k][1]) {
+            output += " - " + data[j].pilots[k][1];
+          }
           if (k < data[j].pilots.length - 1) {
             output += ', ';
           }
